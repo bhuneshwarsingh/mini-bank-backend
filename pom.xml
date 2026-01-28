@@ -92,11 +92,7 @@
 			<version>0.11.5</version>
 			<scope>runtime</scope>
 		</dependency>
-        <dependency>
-            <groupId>com.bhuneshwar</groupId>
-            <artifactId>mini_bank</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+
     </dependencies>
 
 	<build>
