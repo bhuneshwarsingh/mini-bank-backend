@@ -24,7 +24,9 @@ public class SecurityConfig {
         http.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 
         http.authorizeHttpRequests(auth -> auth
-                .requestMatchers("/api/auth/**").permitAll()
+                .requestMatchers("/ping",
+                        "/health",
+                        "/api/auth/**").permitAll()
                 .anyRequest().authenticated()
         );
 
